@@ -1,0 +1,16 @@
+name: deoldify
+channels:
+- fastai
+- pytorch
+- conda-forge
+- defaults
+dependencies:
+- python>=3.7.3
+- fastai=1.0.51
+- pytorch=1.0.1
+- tensorboardX=1.6
+- pillow>=6.2.1
+- flask
+- scikit-image
+- pip:
+  - opencv-python>=3.3.0.10

@@ -1,0 +1,6 @@
+fastai==1.0.51
+tensorboardX==1.6
+opencv-python>=3.3.0.10
+pillow>=6.2.1
+flask
+scikit-image
