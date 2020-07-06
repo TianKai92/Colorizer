@@ -217,7 +217,7 @@ def get_stable_image_colorizer(
 ) -> ModelImageVisualizer:
     learn = gen_inference_wide(root_folder=root_folder, weights_name=weights_name)
     filtr = MasterFilter([ColorizerFilter(learn=learn)], render_factor=render_factor)
-    vis = ModelImageVisualizer(filtr, results_dir=results_dir)
+    vis = ModelImageVisualizer(filtr, results_dir=os.path.join(root_folder, results_dir))
     return vis
 
 
